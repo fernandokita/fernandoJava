@@ -1,0 +1,56 @@
+package fernandoPackage;
+
+public class FernandoKitakawa {
+
+	private String graduacao;
+	private String instrumentoMusical;
+	private int idade;
+
+// Construtor padrão..
+
+	public FernandoKitakawa() {
+		graduacao = null;
+		instrumentoMusical = null;
+		idade = 0;
+	}
+
+// Construtor alternativo..
+
+	public FernandoKitakawa(String graduacao, int idade) {
+		setGraduacao(graduacao);
+		setIdade(idade);
+	}
+	
+// Um método de acesso cujo retorno seja o valor de um atributo..
+	
+	public String isInstrumentoMusical(String instrumentoMusical) {
+		return instrumentoMusical;
+	}
+	
+// Um método modificador..
+
+	public void setGraduacao(String graduacao) {
+		this.graduacao = graduacao;
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+// Um método de acesso cujo retorno NÂO seja o valor de um atributo, mas sim um valor CALCULADO em função de um valor de atributo..
+
+	public int multiplicacao() {
+		return calcularMultiplicacao();
+	}
+
+	public int calcularMultiplicacao() {
+		int v1 = 1;
+		int v2 = 1;
+		int valor;
+		
+		valor = v1*v2;
+		
+		return valor;
+	}
+}
+
